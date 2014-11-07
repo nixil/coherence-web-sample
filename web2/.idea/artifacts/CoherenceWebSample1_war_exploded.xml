@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="CoherenceWebSample1:war exploded">
+    <output-path>$PROJECT_DIR$/target/coherence-web-sample1</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="CoherenceWebSample1/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="CoherenceWebSample1" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: javax:javaee-api:6.0" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
