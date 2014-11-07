@@ -1,4 +1,4 @@
-package my.coherenceweb;
+package my.coherenceweb.sample;
 
 import java.io.Serializable;
 

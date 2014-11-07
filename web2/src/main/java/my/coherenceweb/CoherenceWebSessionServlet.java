@@ -1,5 +1,7 @@
 package my.coherenceweb;
 
+import my.coherenceweb.sample.SessionObject;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -20,7 +22,7 @@ public class CoherenceWebSessionServlet extends HttpServlet {
     protected void doGet(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws ServletException, IOException {
         HttpSession session = httpServletRequest.getSession();
         UUID uuid = UUID.randomUUID();
-        session.setAttribute(uuid.toString(),new SessionObject(uuid.toString()));
+        session.setAttribute(uuid.toString() + "-web2",new SessionObject(uuid.toString()));
         Enumeration<String> attributeNames = session.getAttributeNames();
         PrintWriter writer = httpServletResponse.getWriter();
         while(attributeNames.hasMoreElements()){
