@@ -6,5 +6,7 @@
 
     <session-descriptor>
         <persistent-store-type>coherence-web</persistent-store-type>
+        <cookie-domain>.us.oracle.com</cookie-domain>
+        <cookie-name>CW_SESSIONID</cookie-name>
     </session-descriptor>
 </weblogic-web-app>

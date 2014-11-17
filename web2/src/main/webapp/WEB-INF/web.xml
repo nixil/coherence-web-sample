@@ -6,6 +6,10 @@
        http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
     <context-param>
         <param-name>coherence-scopecontroller-class</param-name>
-        <param-value>com.tangosol.coherence.servlet.AbstractHttpSessionCollection$GlobalScopeController</param-value>
+        <param-value>com.tangosol.coherence.servlet.AbstractHttpSessionCollection$ApplicationScopeController</param-value>
+    </context-param>
+    <context-param>
+        <param-name>coherence-application-name</param-name>
+        <param-value>group1</param-value>
     </context-param>
 </web-app>
